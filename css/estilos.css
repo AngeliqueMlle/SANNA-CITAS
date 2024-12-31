@@ -1,0 +1,110 @@
+/* Reset de estilos para asegurar la consistencia en todos los navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("../img/fondo_clinica.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Estilos generales de la página */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+.formulario {
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  border: 1.5px solid ;
+  box-shadow: 0 0 25px;
+  backdrop-filter: blur(50px);
+}
+
+.formulario label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.formulario input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formulario a.disabled {
+  background-color: #ccc;
+  pointer-events: none;
+}
+
+/* Estilos para la sección de recuperar contraseña */
+.section-recuperar-contrasena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .formulario {
+    padding: 10px;
+  }
+
+  .formulario input[type="text"] {
+    margin-bottom: 10px;
+  }
+
+  .formulario a {
+    font-size: 14px;
+  }
+}
